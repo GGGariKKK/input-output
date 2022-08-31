@@ -36,8 +36,4 @@ public class Exercise3 {
                         .collect(Collectors.joining("\n"))
         );
     }
-
-    public static void main(String[] args) {
-        Exercise3.printWordFrequency();
-    }
 }
