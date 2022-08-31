@@ -13,7 +13,7 @@ public class Exercise2 {
     private Exercise2() {
     }
 
-    public static void textFileUsersReader() {
+    public static void txtToJson() {
         var readData = new StringJoiner("\n");
         try (Scanner sc = new Scanner(new File(INPUT_FILE_PATH))) {
             while (sc.hasNextLine())
@@ -31,6 +31,8 @@ public class Exercise2 {
         var jsonFormat = jsonWriter(values, attributes);
 
         writeToFile(jsonFormat);
+
+        System.out.println(jsonFormat);
     }
 
     private static String jsonWriter(List<String[]> values, String... attributes) {
